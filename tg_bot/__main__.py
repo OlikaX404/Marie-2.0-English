@@ -25,9 +25,6 @@ im a group manager bot maintained by  [this person](tg://user?id={}).
 My future updates will be put into This Channel - @Ethiorealgamers & My Support Group @ethiogamersdiscussion.
 
 For more commands click /help...
-[Add Me To Your Group ❤️](buttonurl://t.me/EthioGamer_helpbot?startgroup=true)
-
-
 """
 
 HELP_STRINGS = """
@@ -141,6 +138,10 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
+                keyboard = [[InlineKeyboardButton(text=tld(chat.id, "Add Me To Your Group ♥️"), url="t.me/EthioGamer_helpbot?startgroup=true")]]
+                keyboard += [[InlineKeyboardButton(text=tld(chat.id, "Updates ❓"), url="https://t.me/Ethiorealgamers"), InlineKeyboardButton(text=tld(chat.id, "🌍 Support Chat 🌍"), url="https://t.me/ethiogamersdiscussion")]]
+                
+                
     else:
         update.effective_message.reply_text("waked up😏😏😏")
 
