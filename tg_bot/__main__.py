@@ -24,7 +24,6 @@ My future updates will be put into This Channel - @Ethiorealgamers & My Support 
 This is my [sponsor](https://t.me/Gold_Digger_Prank)
 For more commands click /help...
 **Keep in mind that any changes you DO do to the source have to be on github, as per the license.**
-[Add Me To Your Group ❤️](buttonurl://t.me/EthioGamer_helpbot?startgroup=true)
 """
 
 HELP_STRINGS = """
