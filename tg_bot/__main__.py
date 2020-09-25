@@ -25,7 +25,7 @@ im a group manager bot maintained by  [this person](tg://user?id={}).
 My future updates will be put into This Channel - @Ethiorealgamers & My Support Group @ethiogamersdiscussion.
 
 For more commands click /help...
-[Add Me To Your Group ❤️](buttonurl://t.me/EthioGamer_helpbot?startgroup=true)
+
 """
 
 HELP_STRINGS = """
