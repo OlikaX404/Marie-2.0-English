@@ -19,15 +19,18 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 hi {}, my name is {}! if you have any questions about how to use me please give me /help... 
+
 im a group manager bot maintained by  [this person](tg://user?id={}).
+
 My future updates will be put into This Channel - @Ethiorealgamers & My Support Group @ethiogamersdiscussion.
-This is my [sponsor](https://t.me/Gold_Digger_Prank)
+
 For more commands click /help...
-**Keep in mind that any changes you DO do to the source have to be on github, as per the license.**
 """
 
 HELP_STRINGS = """
+
 Hello! my name *{}*.
+
 *Main* available commands:
  - /start: Start the bot...
  - /help: help....
@@ -35,6 +38,7 @@ Hello! my name *{}*.
  - /settings:
    - in PM: To find out what SETTINGS you have set....
    - in a group:
+
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
@@ -134,6 +138,8 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
+                keyboard += [[InlineKeyboardButton(text=tld(chat.id, "Updates ❓"), url="https://t.me/Ethiorealgamers"), InlineKeyboardButton(text=tld(chat.id, "🌍 Support Chat 🌍"), url="https://t.me/ethiogamersdiscussion")]]
+                
     else:
         update.effective_message.reply_text("waked up😏😏😏")
 
