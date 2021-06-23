@@ -18,14 +18,14 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-hi {}, my name is {}! if you have any questions about how to use me please give me /help... 
+hi {}, my name is {Ethio Termux User GH}! if you have any questions about how to use me please give me /help... 
 
-im a group manager bot maintained by  [this person](tg://user?id={}).
+im a group manager bot maintained by  [this person](tg://user?id={@OlikaX}).
 
-My future updates will be put into This Channel - @Ethiorealgamers & My Support Group @ethiogamersdiscussion.
+My future updates will be put into This Channel - @EthioTermuxuser & My Support Group @ethiotermuxuserdiscussion.
 
 For more commands click /help...
-[Add Me To Your Group ❤️](https://t.me/EthioGamer_helpbot?startgroup=true) and give me full admin 
+[Add Me To Your Group ](https://t.me/Etughbot?startgroup=true) and give me full admin 
 """
 
 HELP_STRINGS = """
@@ -45,10 +45,10 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
+It took lots of work for [my creator](t.me/OlikaX) to get me to where I am now, and every donation helps \
+motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or Coca \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+There are two ways of paying him; [PayPal](paypal.me/Olikaamsalu),"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -140,7 +140,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("waked up😏😏😏")
+        update.effective_message.reply_text("አቤት??")
 
 
 # for test purposes
